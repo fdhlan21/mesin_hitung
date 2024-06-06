@@ -43,7 +43,7 @@ export default function BottomNavigator({ state, descriptors, navigation }) {
   }
 
   return (
-    <View style={{ backgroundColor: '#829F00  ', flexDirection: 'row',  borderTopLeftRadius:20, borderTopRightRadius:20}}>
+    <View style={{ backgroundColor: '#829F00', flexDirection: 'row',  borderTopLeftRadius:20, borderTopRightRadius:20}}>
       {state.routes.map((route, index) => {
         const { options } = descriptors[route.key];
         const label =

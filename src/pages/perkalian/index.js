@@ -8,6 +8,10 @@ export default function Perkalian({navigation}) {
     const Back = () => {
         navigation.goBack()
     }
+
+    const SubMenu = () => {
+        navigation.navigate('PerkalianSubMenu')
+    }
   return (
     <View style={{flex:1, backgroundColor:colors.primary}}>
         {/* HEADER */}
@@ -34,45 +38,45 @@ export default function Perkalian({navigation}) {
            
                 <View style={{padding:10, marginTop:16}}>
                     {/* 1 */}
-                <TouchableNativeFeedback onPress={() => navigation.navigate('PerkalianSubMenu')}>
+                <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>1. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 0 - 5)</Text>
+                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>1. Perkalian Bilangan 1</Text>
                     </View>
                 </TouchableNativeFeedback>
 
                 <MyGap jarak={16}/>
     
                      {/* 2 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>2. Penjumlahan 2 Bilangan {'\n'}(Hasilnya 6)</Text>
+                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>2. Perkalian Bilangan 10</Text>
                     </View>
                 </TouchableNativeFeedback>
 
                   <MyGap jarak={16}/>
     
                      {/* 3 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>3. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 7)</Text>
+                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>3. Perkalian Bilangan 2</Text>
                     </View>
                 </TouchableNativeFeedback>
 
                   <MyGap jarak={16}/>
     
                      {/* 4 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>4. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 8)</Text>
+                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>4. Perkalian Bilangan 9</Text>
                     </View>
                 </TouchableNativeFeedback>
 
                  <MyGap jarak={16}/>
     
                      {/* 5 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>5. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 9)</Text>
+                        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>5. Perkalian Bilangan 5</Text>
                     </View>
                 </TouchableNativeFeedback>
                 
@@ -80,9 +84,9 @@ export default function Perkalian({navigation}) {
                 <MyGap jarak={16}/>
     
     {/* 6 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>6. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 10)</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>6. Perkalian Bilangan 5 Khusus{'\n'}(6x5, 7x5, 8x5)</Text>
    </View>
 </TouchableNativeFeedback>
 
@@ -90,135 +94,83 @@ export default function Perkalian({navigation}) {
 <MyGap jarak={16}/>
     
     {/* 7 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>7. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 6/7/8)</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>7. Perkalian Bilangan Sama - Kuadrat</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 8 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>8. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 9/10)</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>8. Perkalian Bilangan 3 Khusus{'\n'}(4x3, 5x3, 6x3, 7x3, 8x3)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 9 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>9. Penjumlahan 2 Bilangan{'\n'}(Hasilnya 1-10)</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>9. Perkalian Bilangan 4 Khusus{'\n'}(6x4, 7x4, 8x4)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 10 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>10. 10 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>10. Perkalian Bilangan 3 dan 4 Acak</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 11 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>11. 9 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>11. Perkalian Bilangan 6,7,8{'\n'}(Fokus 6x7, 6x8, 7x8)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 12 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>12. 8 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>12. Perkalian Bilangan 6, 7, 8 (Acak)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 13 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>13. 6/7 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>13. Perkalian Bilangan 1 - 10 (Acak)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 14 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>14. 8/9 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>14. Perkalian Susun Bilangan 2 Digit (Acak)</Text>
    </View>
 </TouchableNativeFeedback>
 
 <MyGap jarak={16}/>
     
     {/* 15 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>15. 6/7/8/9 + Bilangan 1 Angka</Text>
+       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>15. Perkalian Susun Bilangan 3 Digit (Acak)</Text>
    </View>
 </TouchableNativeFeedback>
-
-<MyGap jarak={16}/>
-    
-    {/* 16 */}
-    <TouchableNativeFeedback>
-   <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>16. Penjumlahan Susun Maksimal 2{'\n'}Digit (Tanpa Menyimpan)</Text>
-   </View>
-</TouchableNativeFeedback>
-
-<MyGap jarak={16}/>
-    
-    {/* 17 */}
-    <TouchableNativeFeedback>
-   <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>17. Penjumlahan Susun Maksimal 2{'\n'}Digit (Menyimpan)</Text>
-   </View>
-</TouchableNativeFeedback>
-
-<MyGap jarak={16}/>
-    
-    {/* 18 */}
-    <TouchableNativeFeedback>
-   <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>18. Penjumlahan Susun Maksimal 3{'\n'}Digit (Tanpa Menyimpan)</Text>
-   </View>
-</TouchableNativeFeedback>
-
-<MyGap jarak={16}/>
-    
-    {/* 19 */}
-    <TouchableNativeFeedback>
-   <View style={{padding:10, backgroundColor:colors.headerperkalian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>19. Penjumlahan Susun Maksimal 3{'\n'}Digit (Menyimpan)</Text>
-   </View>
-</TouchableNativeFeedback>
-
-<MyGap jarak={16}/>
-
-    {/* 20 */}
-    <TouchableNativeFeedback>
-   <View style={{padding:10, backgroundColor:colors.headerpembagian, borderRadius:15,}}>
-       <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>19. Penjumlahan Susun Maksimal 4{'\n'}Digit (Campur)</Text>
-   </View>
-</TouchableNativeFeedback>
-    
-  
-
-
-
-
-
                 </View>
       </ScrollView>
     </View>

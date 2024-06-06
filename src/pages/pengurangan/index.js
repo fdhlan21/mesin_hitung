@@ -8,6 +8,10 @@ export default function Pengurangan({navigation}) {
     const Back = () => {
         navigation.goBack()
     }
+
+    const SubMenu = () => {
+        navigation.navigate('PenguranganSubMenu')
+    }
   return (
     <View style={{flex:1, backgroundColor:colors.primary}}>
         {/* HEADER */}
@@ -34,7 +38,7 @@ export default function Pengurangan({navigation}) {
            
            <View style={{padding:10, marginTop:16}}>
                     {/* 1 */}
-                <TouchableNativeFeedback onPress={() => navigation.navigate('PenguranganSubMenu')}>
+                <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
                         <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>1. Pengurangan Bilangan{'\n'}Kurang Dari 5</Text>
                     </View>
@@ -43,7 +47,7 @@ export default function Pengurangan({navigation}) {
                 <MyGap jarak={16}/>
     
                      {/* 2 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
                         <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>2. Pengurangan Bilangan 6 & 7</Text>
                     </View>
@@ -52,7 +56,7 @@ export default function Pengurangan({navigation}) {
                   <MyGap jarak={16}/>
     
                      {/* 3 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
                         <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>3. Penurangan Bilangan 8 & 9</Text>
                     </View>
@@ -61,7 +65,7 @@ export default function Pengurangan({navigation}) {
                   <MyGap jarak={16}/>
     
                      {/* 4 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
                         <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>4. Pengurangan Bilangan 6,7,8,9</Text>
                     </View>
@@ -70,7 +74,7 @@ export default function Pengurangan({navigation}) {
                  <MyGap jarak={16}/>
     
                      {/* 5 */}
-                     <TouchableNativeFeedback>
+                     <TouchableNativeFeedback onPress={SubMenu}>
                     <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
                         <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>5. Pengurangan Bilangan 10</Text>
                     </View>
@@ -80,7 +84,7 @@ export default function Pengurangan({navigation}) {
                 <MyGap jarak={16}/>
     
     {/* 6 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>6. Pengurangan Kurang Dari{'\n'}20 (Tanpa Coret)</Text>
    </View>
@@ -90,7 +94,7 @@ export default function Pengurangan({navigation}) {
 <MyGap jarak={16}/>
     
     {/* 7 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>7. Pengurangan Kurang Dari{'\n'}20 (Sistem Coret)</Text>
    </View>
@@ -99,7 +103,7 @@ export default function Pengurangan({navigation}) {
 <MyGap jarak={16}/>
     
     {/* 8 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>8. Pengurangan Kurang Dari{'\n'}100 (Tanpa Coret)</Text>
    </View>
@@ -108,7 +112,7 @@ export default function Pengurangan({navigation}) {
 <MyGap jarak={16}/>
     
     {/* 9 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>9. Pengurangan Bilangan{'\n'}2 Digit (Campur)</Text>
    </View>
@@ -117,7 +121,7 @@ export default function Pengurangan({navigation}) {
 <MyGap jarak={16}/>
     
     {/* 10 */}
-    <TouchableNativeFeedback>
+    <TouchableNativeFeedback onPress={SubMenu}>
    <View style={{padding:10, backgroundColor:colors.headerpengurangan, borderRadius:15,}}>
        <Text style={{color:"white", fontFamily:fonts.primary[600], fontSize:15}}>10. Pengurangan Bilangan{'\n'}3 Digit (Campur)</Text>
    </View>
